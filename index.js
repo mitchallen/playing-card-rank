@@ -25,8 +25,8 @@ module.exports = Object.freeze({
         return (value >= 1 && value <= 13);
     },
     isFaceCard: function(value) {
-        return (value == this.JACK 
-             || value == this.QUEEN
-             || value == this.KING);
+        return (value == this.JACK  || 
+                value == this.QUEEN || 
+                value == this.KING);
     },
 });
