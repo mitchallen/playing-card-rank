@@ -15,7 +15,7 @@ You must use __npm__ __2.7.0__ or higher because of the scoped package name.
 
 ## Usage
 
-This module returns an object that has thirteend frozen and unique properties that can be used to represent playing card ranks:
+This module returns an object that has thirteen frozen and unique properties that can be used to represent playing card ranks:
 
 
 * __ACE__
