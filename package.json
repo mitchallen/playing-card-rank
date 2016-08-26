@@ -1,7 +1,7 @@
 {
   "name": "@mitchallen/playing-card-rank",
   "version": "0.1.0",
-  "description": "",
+  "description": "An enum-like object for representing the ranks in a playing card deck.",
   "main": "index.js",
   "scripts": {
     "//": "To use: npm start (useful if not a module)",
