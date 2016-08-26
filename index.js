@@ -20,5 +20,13 @@ module.exports = Object.freeze({
     TEN: 10,
     JACK: 11,
     QUEEN: 12,
-    KING: 13
+    KING: 13,
+    isRank: function(value) {
+        return (value >= 1 && value <= 13);
+    },
+    isFaceCard: function(value) {
+        return (value == this.JACK 
+             || value == this.QUEEN
+             || value == this.KING);
+    },
 });

@@ -40,6 +40,25 @@ You can use them to define the rank of each card in a deck.
 	card[0].suit = SUIT.HEART;
 	card[0].rank = RANK.ACE;
 
+* * *
+
+### .isRank(value)
+
+You can test if value is a valid rank by passing it to the __isRank__ method:
+
+    if( RANK.isRank(card.rank) ) { ... }
+
+* * *
+
+### .isFaceCard(value)
+
+The JACK, QUEEN and KING are face cards. All others are not.
+
+You can test if a value is a face card (JACK, QUEEN, KING) by passing it to the __isFaceCard__ method:
+
+    if( RANK.isFaceCard(card.rank) ) { ... }
+	
+* * *
 
 ## Testing
 
@@ -64,6 +83,11 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * * *
 
 ## Version History
+
+#### Version 0.1.2
+
+* added __isRank__ method
+* added __isFaceCard__ method
 
 #### Version 0.1.1 
 
