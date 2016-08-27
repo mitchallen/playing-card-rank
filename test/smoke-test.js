@@ -42,6 +42,36 @@ describe('module smoke test', function() {
         done();
     });
 
+    it('first should equal 1', function(done) {
+        RANK.first.should.eql(1);
+        done();
+    });
+
+    it('last should equal 13', function(done) {
+        RANK.last.should.eql(13);
+        done();
+    });
+
+    it('1 should be first', function(done) {
+        RANK.isFirst(1).should.eql(true);
+        done();
+    });
+
+    it('13 should not be first', function(done) {
+        RANK.isFirst(13).should.eql(false);
+        done();
+    });
+
+    it('13 should be last', function(done) {
+        RANK.isLast(13).should.eql(true);
+        done();
+    });
+
+    it('1 should not be last', function(done) {
+        RANK.isLast(1).should.eql(false);
+        done();
+    });
+
     it('ACE rank should exist and equal to 1', function(done) {
         const rank = RANK.ACE;
         should.exist(rank);

@@ -57,6 +57,36 @@ The JACK, QUEEN and KING are face cards. All others are not.
 You can test if a value is a face card (JACK, QUEEN, KING) by passing it to the __isFaceCard__ method:
 
     if( RANK.isFaceCard(card.rank) ) { ... }
+    
+* * *
+
+### .isFirst(value)
+
+For looping you can test to see if a rank is the first in the list:
+
+    while( ! RANK.isFirst(card.rank) ) { ... }
+
+* * *
+
+### .isLast(value)
+
+For looping you can test to see if a rank is the last in the list:
+
+    while( ! RANK.isLast(card.rank) ) { ... }
+
+* * *
+
+### .first
+
+For looping you can retrieve the first (lowest) value for the ranks in the list.
+
+	for( i = RANK.first; ... ) { ... }
+	
+###
+
+For looping you can retrieve the last (highest) value for the ranks in the list.
+
+	for( i = RANK.first; i <= RANK.last, i++ ) { ... }
 	
 * * *
 
@@ -83,6 +113,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * * *
 
 ## Version History
+
+#### Version 0.1.3
+
+* added first, last, isFirst and isLast
 
 #### Version 0.1.2
 

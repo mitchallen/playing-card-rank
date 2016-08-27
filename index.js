@@ -21,6 +21,14 @@ module.exports = Object.freeze({
     JACK: 11,
     QUEEN: 12,
     KING: 13,
+    first: 1,
+    last: 13,
+    isFirst: function(value) {
+        return value == 1;
+    },
+    isLast: function(value) {
+        return value == 13;
+    },
     isRank: function(value) {
         return (value >= 1 && value <= 13);
     },
