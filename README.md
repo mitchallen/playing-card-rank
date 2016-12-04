@@ -80,13 +80,13 @@ For looping you can test to see if a rank is the last in the list:
 
 For looping you can retrieve the first (lowest) value for the ranks in the list.
 
-	for( i = RANK.first; ... ) { ... }
+	for( var i = RANK.first; ... ) { ... }
 	
 ###
 
 For looping you can retrieve the last (highest) value for the ranks in the list.
 
-	for( i = RANK.first; i <= RANK.last, i++ ) { ... }
+	for( var i = RANK.first; i <= RANK.last; i++ ) { ... }
 	
 * * *
 
